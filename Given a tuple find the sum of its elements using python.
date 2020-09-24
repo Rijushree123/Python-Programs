@@ -1,0 +1,5 @@
+sum=0
+t=tuple(map(int,input().split()))
+for i in range(0,len(t)):
+    sum=sum+t[i]
+print(sum)
