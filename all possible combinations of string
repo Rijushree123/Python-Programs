@@ -1,0 +1,4 @@
+from itertools import combinations
+x =input()
+lip=list([''.join(l) for i in range(len(x)) for l in combinations(x, i+1)])
+print(lip)
