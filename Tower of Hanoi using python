@@ -1,0 +1,13 @@
+def move(n,A,B,C):
+    if n==1:
+        print("Moving ring 1 from",A,"to",B)
+        return
+    
+    move(n-1,A,C,B)
+    print("Moving ring",n,"from",A,"to",B);
+    move(n-1,C,B,A)
+        
+print("Enter the number of rings to move",end=" ")
+n=int(input())
+move(n,'A','B','C')
+print("A=Source  B=Destination  C=Auxillary")
