@@ -1,0 +1,29 @@
+from collections import Counter
+def freqQuery(queries):
+    d1=Counter() #counter to stor the element count
+    d2=Counter() #counter to store the frequency count
+    for k,v in queries:
+        if k==1:
+            d2[d1[v]]-=1
+            d1[v]+=1
+            d2[d1[v]]+=1
+            
+                
+        elif k==2:
+            if d1[v]>0:
+                d2[d1[v]]-=1
+                d1[v]-=1
+                d2[d1[v]]+=1
+            
+        else:
+            if d2[v]>0: #if count of frequency is greter than zero then print 0
+                print('1')
+            else:
+                print('0')
+                
+
+q = int(input().strip())
+queries = []
+for _ in range(q):
+    queries.append(list(map(int, input().rstrip().split())))
+freqQuery(queries)
