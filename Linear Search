@@ -1,0 +1,10 @@
+nk=list(map(int,input().split()))
+n=nk[0]
+m=nk[1]
+arr=list(map(int,input().split()))
+index=0
+for i in range(n-1,0,-1):
+    if arr[i]==m:
+        index=i+1
+        break
+print(index)
