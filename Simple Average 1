@@ -12,3 +12,4 @@ if(count == 0):
 else:
     avg = float(sum/count)
     print(avg)
+#Rijushree Guha
