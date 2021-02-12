@@ -10,3 +10,4 @@ uniqueEle=sorted(uniqueEle)
 for i in range(0,len(uniqueEle)):
     total=strInput.count(uniqueEle[i])
     print(f"{uniqueEle[i]} | {'*'*total}")
+#Rijushree Guha
