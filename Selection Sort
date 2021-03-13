@@ -9,3 +9,4 @@ for i in range(0,n):
             min=j
         arr[i],arr[min]=arr[min],arr[i]
 print(' '.join(map(str, arr)))
+#Rijushree 
