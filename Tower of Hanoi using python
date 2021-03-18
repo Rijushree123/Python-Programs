@@ -11,3 +11,4 @@ print("Enter the number of rings to move",end=" ")
 n=int(input())
 move(n,'A','B','C')
 print("A=Source  B=Destination  C=Auxillary")
+#Rijushree
