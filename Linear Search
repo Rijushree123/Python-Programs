@@ -8,3 +8,4 @@ for i in range(n-1,0,-1):
         index=i+1
         break
 print(index)
+#Rijushree Guha
